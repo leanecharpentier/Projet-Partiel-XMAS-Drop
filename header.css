@@ -1,0 +1,109 @@
+header {
+    background-image: url(images/Background.png);
+    background-size: contain;
+    height: fit-content;
+    }
+
+nav {
+    display: flex;
+    position: fixed;
+    background-color: #121B1E;
+    justify-content: space-around;
+    height: fit-content;
+    width: 100%;
+    box-shadow: 0 0 50px #121B1E;
+    z-index: 1;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    font-family: 'Spectral', serif;
+    font-size: 25px;
+    font-weight: 900;
+    color: #F3EEDE;
+    text-decoration: none;
+    margin: 20px 60px;
+    vertical-align: middle;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+
+.logo_nav {
+    height: 80px;
+    width: auto;
+    background-color: transparent;
+    vertical-align: middle;
+}
+
+.logo_nav:hover{
+    transform: rotate(360deg);
+    transition: all 0.5s ease-in-out;
+}
+
+.banniere {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+    padding-top: 110px;
+}
+
+.bio {
+    font-size: 17px;
+    margin-right: 50px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.titre_ban {
+    font-family: 'Spectral', serif;
+    letter-spacing: -5px;
+    word-spacing: 15px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 3px #b20102;
+    margin: 0;
+    width: fit-content;
+    font-size: 70px;
+    justify-content: flex-end;
+}
+
+.banniere p {
+    margin: 0;
+    text-align: right;
+}
+
+.logo_ban img {
+    height: 400px;
+    transition: transform 0.5s;
+}
+
+.logo_ban img:hover {
+    z-index: -1;
+    transform: scale(1.2);
+    /*transform: rotate(360deg);*/
+}
+
+.banniere .bouton {
+    display: block;
+    color: white;
+    text-decoration: none;
+    background-color: #b20102;
+    border-radius: 10px;
+    padding: 10px 30px;
+    width: fit-content;
+}

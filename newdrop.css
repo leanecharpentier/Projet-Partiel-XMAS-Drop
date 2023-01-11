@@ -1,0 +1,229 @@
+/* ce code sert à définir la façon dont sont calculées la hauteur et la largeur d'un élément. "border-box" nous permet de comprendre plus facilement les dimensions d'une boite, car on définit avec border-box que le padding et le border sont inclus dans la hauteur/largeur totale de la boite */
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: absolute;
+}
+
+.container0 {
+  background-image: url(images/Background.png);
+  background-size: contain;
+  padding: 30px;
+}
+
+.container0 p {
+  text-align: center;
+  color: #F3EEDE;
+  padding-bottom: 80px;
+  padding-top: 30px;
+}
+
+.container0 h2 {
+  color: #F3EEDE;
+  text-align: center;
+}
+
+.container0 .titre {
+  color: #b20102;
+  padding: 0;
+  padding-bottom: 30px;
+}
+
+.bouton {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+
+.bouton li {
+  display: inline;
+  width: 100px;
+}
+
+.bouton li a {
+  color:#F3EEDE;
+  text-align: center;
+  text-decoration: none;
+  background-color: #b20102;
+  border-radius: 10px;
+  margin: 0 50px;
+  padding: 10px 30px;
+}
+
+.bouton li a:hover,
+.bouton li a:focus {
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 60px;
+  font-family: 'Spectral';
+}
+
+.all{
+  display: flex;
+  background: #F3EEDE;
+  flex-direction: row;
+}
+
+.container{
+  color: #19262B;
+  width: 100%;
+  padding: 40px;
+  align-self: center;
+}
+
+.all a {
+  color: #19262B;
+}
+
+.all2 a {
+  color: #F3EEDE;
+}
+
+.p-asso{
+    display: flex;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+.all2 {
+  display: flex;
+  background: #19262B;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container2{
+  color: #F3EEDE;
+  padding: 40px 65px 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.t-asso {
+    text-align: center;
+}
+
+.t-kdo{
+    text-align: right;
+}
+
+.p-kdo{
+  text-align: right;
+  z-index: 2;
+}
+
+.all2 img {
+    height: 350px;
+    width: auto;
+    margin: 40px;
+    margin-right: 50px;
+    border-radius: 20px;
+    transition: transform 1s;
+  }
+
+  .all2 img:hover {
+    transform: rotate3d(1, 2.0, 3.0, 360deg) scale(1.5);
+    z-index: 1;
+  }
+
+.t-collab{
+  text-align: center;
+}
+
+.p-collab {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.partner{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.partner a{
+  display: flex;
+  width: 150px;
+  height: auto;
+}
+
+.partner a img{
+  width: 150px;
+  height: auto;
+  opacity: 70%;
+  transition: transform 0.7s;
+}
+
+.partner img:hover{
+  opacity: 100%;
+  transform: scale(1.2);
+}
+
+/* FORMULAIRE */
+
+input, select, button {
+	font-size: inherit;
+}
+
+input[type="text"], textarea {
+	display: block;
+	width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+label {
+	display: block;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+input, select, textarea {
+	margin-bottom: 20px;
+}
+
+textarea {
+	min-width: 300px;
+	min-height: 200px;
+}
+
+button {
+	width: 150px;
+	height: 40px;
+	float: right;
+	color: white;
+	border: none;
+	background-color: #b20102;
+	border-radius: 10px;
+}
+
+.reward{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 30px 0 30px 0;
+}
+
+textarea{
+  background-image: url(images/logov2trans.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: top;
+}

@@ -1,0 +1,84 @@
+/* ce code sert à définir la façon dont sont calculées la hauteur et la largeur d'un élément. "border-box" nous permet de comprendre plus facilement les dimensions d'une boite, car on définit avec border-box que le padding et le border sont inclus dans la hauteur/largeur totale de la boite */
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus{
+  text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #121B1E;
+    box-shadow: 0px 0px 50px #000000;
+    width: 100%;
+    padding: 30px 0 30px;
+    bottom: 0; 
+    color: white;
+    text-decoration: none;
+  }
+
+
+.liste{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.xmas{
+  display: flex;
+  align-items: center;
+}
+
+.xmas img{
+  width: 70px;
+  height: auto;
+}
+
+.logo{
+  width: 40px;
+}
+
+.social-media-icons{
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.xmas h2 {
+  font-size: 27px;
+  font-family: 'Poppins' sans-serif;
+  display: contents;
+}
+
+.btt {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 50px;
+}
+
+.btt a {
+  color: #b20102;
+  opacity: 70%;
+}
+
+.btt a:hover,
+.btt a:focus{
+  opacity: 100%;
+}

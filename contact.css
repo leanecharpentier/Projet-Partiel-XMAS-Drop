@@ -1,0 +1,164 @@
+main {
+    padding-top: 120px;
+    color: #F3EEDE;
+}
+
+h2 {    
+    font-size: 50px;
+    font-family: 'Spectral';
+    padding-bottom: 20px;
+}
+
+.t-equipe {
+    padding-left: 50px;
+}
+
+.bloc1 {
+    padding: 50px;
+    padding-top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.equipe {
+    width: 70%;
+}
+
+.equipe img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.personne {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.p {
+    display: flex;
+    flex-direction: row;
+}
+
+.ind {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.photo {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.icon-rs {
+    display: flex;
+    vertical-align: middle;
+    gap: 10px;
+}
+
+.icon {    
+    width: 30px;
+    height: auto;
+}
+
+.bloc2 {    
+    margin: 0;
+    padding: 50px;
+    background-color: #F3EEDE;
+    width: 100%;
+    color: #19262B;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+}
+
+input, select, button {
+	font-size: inherit;
+}
+
+input[type="text"], input[type="email"], textarea, select {
+	display: block;
+	width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+label {
+	display: block;
+    padding-left: 10px;
+}
+
+input[type="checkbox"] + label {
+	display: inline-block;
+}
+
+.check {
+    display: flex; 
+    flex-direction: row;
+    width: 100%;
+}
+
+input, select, textarea {
+	margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+    margin: 0 10px;
+}
+
+textarea {
+	min-width: 300px;
+	min-height: 200px;
+}
+
+button {
+    margin-top: 50px;
+    display: flex;
+    margin-left: auto;
+    background-color: #b20102;
+    color: #F3EEDE;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.bloc3 {
+    background-image: url(images/Background.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+}
+
+.bloc3 img {
+    width: 150px;
+    height: auto;
+    margin-top: 50px;
+}
+
+.bloc3 h3 {
+    padding-bottom: 30px;
+}
+
+.bloc3 .newsletter {
+    width: 35%;
+}
+
+.bloc3 input[type="email"] {
+    margin-bottom: 70px;
+    padding: 10px;
+    text-align: center;
+}

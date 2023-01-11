@@ -1,0 +1,173 @@
+/* ce code sert à définir la façon dont sont calculées la hauteur et la largeur d'un élément. "border-box" nous permet de comprendre plus facilement les dimensions d'une boite, car on définit avec border-box que le padding et le border sont inclus dans la hauteur/largeur totale de la boite */
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: absolute;
+}
+
+.container0 {
+  background-image: url(images/Background.png);
+  background-size: contain;
+  padding: 30px;
+  width: 100%;
+}
+
+.container0 p {
+  text-align: center;
+  color: #F3EEDE;
+  padding-bottom: 80px;
+  padding-top: 30px;
+  width: 90%;
+  margin: auto;
+}
+
+.container0 h2 {
+  color: #F3EEDE;
+  text-align: center;
+}
+
+.container0 .titre {
+  color: #b20102;
+  padding: 0;
+}
+
+.bouton {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+
+.bouton li {
+  display: inline;
+  width: 100px;
+}
+
+.bouton li a {
+  color:#F3EEDE;
+  text-align: center;
+  text-decoration: none;
+  background-color: #b20102;
+  border-radius: 10px;
+  margin: 0 50px;
+  padding: 10px 30px;
+}
+
+.bouton li a:hover,
+.bouton li a:focus {
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 60px;
+  font-family: 'Spectral';
+}
+
+.all{
+  width: 100%;
+  display: flex;
+  background: #F3EEDE;
+  flex-direction: row;
+}
+
+.container{
+  width: 50%;
+  color: #19262B;
+  padding: 40px 0 40px 65px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.all .img-all {
+  width: 50%;
+}
+
+.all img {
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  border-radius: 60px;
+}
+
+.all img:hover {
+  opacity: 70%;
+}
+
+.all2 a {
+  color: #F3EEDE;
+}
+
+.p-cuisine{
+  width: 90%;
+}
+
+.p-sport{
+  width: 90%;
+}
+
+.all2 {
+  width: 100%;
+  display: flex;
+  background: #19262B;
+  flex-direction: row;
+}
+
+.container2{
+  width: 50%;
+  color: #F3EEDE;
+  padding: 40px 65px 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: flex-end;
+}
+
+.all2 .img-all2 {
+  width: 50%;
+}
+
+.all2 img {
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  border-radius: 60px;
+}
+
+.all2 img:hover {
+  opacity: 70%;
+}
+
+.all a {
+  color: #19262B;
+}
+
+.t-deco {
+  text-align: right;
+  margin-left: auto;
+}
+
+.p-deco{
+  width: 90%;
+  text-align: right;
+}
+
+.t-papeterie {
+  text-align: right;
+  margin-left: auto;
+}
+
+.p-papeterie{
+  width: 90%;
+  text-align: right;
+}

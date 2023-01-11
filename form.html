@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/Logo v2.png" />
+    <title>Form</title>
+</head>
+<body>
+    <form action="method-get.php" method="get">
+        Nom :     <input type="text" name="nom" />
+        Age :     <input type="text" name="age" />
+        Adresse : <input type="text" name="adresse" />
+        <input type="submit" name="submit" /> 
+    </form>
+
+    <?php
+   // Vérifier si le formulaire est soumis 
+   if ( isset( $_GET['submit'] ) ) {
+     /* récupérer les données du formulaire en utilisant 
+        la valeur des attributs name comme clé 
+       */
+     $nom = $_GET['nom']; 
+     $age = $_GET['age']; 
+     $adresse = $_GET['adresse'];
+     // afficher le résultat
+     echo '<h3>Informations récupérées en utilisant GET</h3>'; 
+     echo 'Nom : ' . $nom . ' Age : ' . $age . ' Adresse : ' . $adresse; 
+     exit;
+  }
+    ?>
+</body>
+</html>
